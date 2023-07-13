@@ -3,6 +3,7 @@
 
 /*
 - Use a combination of the input values to select from a range of pre-defined conditions
+Ex: Male, 18, etc. = possibly Ligma or Sugma
 */
 
 int main() {
