@@ -128,9 +128,9 @@ int main() {
         break;
 
         default:
-        printf("Placeholder"); // Make loop is default value is triggered
-        break;
-    }
+        printf("Placeholder"); // Make loop is default value is triggered 
+        break;                 // (👉ﾟヮﾟ)👉 ⫹⫺ *Need these done before you head out
+    }                          // -Bossman
 } // remove this bracket after adding "gender" section  
 /*
     if(gender = M || m) {
