@@ -21,7 +21,7 @@ int main() {
         case 19:
         case 20:
         case 21:
-        printf("18-21");
+        printf("18-21"); // These are all placeholders until a clear structure is defined
         break;
 
         case 22:
@@ -128,16 +128,14 @@ int main() {
         break;
 
         default:
-        printf("Placeholder"); // Make loop is default value is triggered 
+        printf("Placeholder"); // Make loop if default value is triggered 
         break;                 // (👉ﾟヮﾟ)👉 ⫹⫺ *Need these done before you head out
     }                          // -Bossman
-} // remove this bracket after adding "gender" section  
+    
+} // <remove this bracket after adding "gender" section
 /*
     if(gender = M || m) {
-        switch(age) {
-            case 1:
 
-        }
     }
     else(gender = F || f) {
 
