@@ -1,7 +1,7 @@
 #include <stdio.h> // Header tags to allow different functions. This one enables printf (print function) *NFC
 #include <stdlib.h>
 #include <string.h>
-
+                            // *NFC = Notes For Caitlin (noob notes)
 int main() {
 
     char fname[25]; // Maximum of 25 characters in the string "fname" *NFC
