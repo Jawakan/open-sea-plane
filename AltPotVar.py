@@ -6,6 +6,9 @@ fragments = ['Nebula Fragment', 'Solar Fragment', 'Stardust Fragment', 'Vortex F
 # Ingredients & Potions lists are incomplete
 allpots = ['Crate potion', 'Fishing potion', 'Flipper potion', 'Gills potion', 'Greater Luck potion', 'Lesser Luck potion', 'Life Force potion', 'Luck potion', 'Obsidian Skin potion', 'Sonar potion', 'Water Walking potion', 'Lesser Healing potion', 'Healing potion', 'Lesser Mana potion', 'Greater Healing potion', 'Greater Mana potion']
 
+def help():
+    print('help - opens this menu\nlist - will list all available potion recipies\nquit - closes this program')
+
 def potlist():
     allpots.sort()
     for pot in allpots:
@@ -41,35 +44,37 @@ while True:
         print(flipperpot)
     elif inqpot == 'gills':
         print(gillspot)
-    elif inqpot == ('greaterluck' or 'greater luck'):
+    elif inqpot == ('greaterluck') or inqpot == ('greater luck'):
         print(greaterluckpot)
-    elif inqpot == ('lesserluck' or 'lesser luck'):
+    elif inqpot == ('lesserluck') or inqpot == ('lesser luck'):
         print(lesserluckpot)
-    elif inqpot == ('lifeforce' or 'life force'):
+    elif inqpot == ('lifeforce') or inqpot == ('life force'):
         print(lifeforcepot)
     elif inqpot == 'luck':
         print(luckpot)
-    elif inqpot == ('obsidianskin' or 'obsidian skin'):
+    elif inqpot == ('obsidianskin') or inqpot == ('obsidian skin'):
         print(obsidianskinpot)
     elif inqpot == 'sonar':
         print(sonarpot)
-    elif inqpot == ('waterwalking' or 'water walking'):
+    elif inqpot == ('waterwalking') or inqpot == ('water walking'):
         print(waterwalkpot)
-    elif inqpot == ('lesserhealing' or 'lesser healing'):
+    elif inqpot == ('lesserhealing') or inqpot == ('lesser healing'):
         print(lesshealpot)
-    elif inqpot == ('heal' or 'healing'):
+    elif inqpot == ('heal') or inqpot == ('healing'):
         print(healpot)
-    elif inqpot == ('greaterhealing' or 'greater healing'):
+    elif inqpot == ('greaterhealing') or inqpot == ('greater healing'):
         print(greathealpot)
     elif inqpot == ('mana'):
         print(manapot)
-    elif inqpot == ('superhealing' or 'super healing'):
+    elif inqpot == ('superhealing') or inqpot == ('super healing'):
         print(superhealpot)
-    elif inqpot == ('supermana' or 'super mana'):
-        print(supermanapot)
-    elif inqpot == ('list' or 'listall' or 'list all'):
+    elif inqpot == ('supermana') or inqpot == ('super mana'): # New potions should be added after the last potion and before non-potion items
+        print(supermanapot)                                   # Don't forget to add them to this "allpots" list
+    elif inqpot == ('help'):
+        help()
+    elif inqpot == ('list'):
         potlist()
-    elif inqpot == ('quit' or 'exit'):
+    elif inqpot == ('quit') or inqpot == ('exit'):
         break
     else:
         quit()
