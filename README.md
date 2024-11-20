@@ -1,2 +1,3 @@
 # open-sea-plane
-first C project
+First C project
+First Python project
