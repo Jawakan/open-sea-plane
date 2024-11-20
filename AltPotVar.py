@@ -1,10 +1,10 @@
 # Ingredients for potion making
 fish = ['Ebonkoi', 'Prismite', 'Shark Fin', 'Doublecod', 'Damselfish', 'Armored Cavefish', 'Crimson Tigerfish', 'Flarefin Koi', 'Obsidifish', 'Prismite', 'Princess Fish', 'Hemopiranha', 'Specular Fish', 'Stinkfish', 'Variegated Lardfish', 'Chaos Fish', 'Frost Minnow']
 plants = ['Moonglow', 'Daybloom', 'Deathweed', 'Fireblossom', 'Blinkroot', 'Grass Seeds', 'Shiverthorn', 'Waterleaf', 'Mushroom', 'Glowing Mushroom', 'Cactus', 'Coral']
-misc = ['Crispy Honey Block', 'Amber', 'Ladybug', 'Pink Pearl', 'White Pearl', 'Black Pearl', 'Obsidian', 'Gel', 'Pixie Dust', 'Crystal Shard', 'Fallen Star', 'Unicorn Horn', 'Lens', 'Cobweb']
+misc = ['Crispy Honey Block', 'Amber', 'Ladybug', 'Pink Pearl', 'White Pearl', 'Black Pearl', 'Obsidian', 'Gel', 'Pixie Dust', 'Crystal Shard', 'Fallen Star', 'Unicorn Horn', 'Lens', 'Cobweb', 'Feather']
 fragments = ['Nebula Fragment', 'Solar Fragment', 'Stardust Fragment', 'Vortex Fragment']
 # Ingredients & Potions lists are incomplete
-allpots = ['Crate potion', 'Fishing potion', 'Flipper potion', 'Gills potion', 'Greater Luck potion', 'Lesser Luck potion', 'Life Force potion', 'Luck potion', 'Obsidian Skin potion', 'Sonar potion', 'Water Walking potion', 'Lesser Healing potion', 'Healing potion', 'Lesser Mana potion', 'Greater Healing potion', 'Greater Mana potion']
+allpots = ['Crate potion', 'Fishing potion', 'Flipper potion', 'Gills potion', 'Greater Luck potion', 'Lesser Luck potion', 'Life Force potion', 'Luck potion', 'Obsidian Skin potion', 'Sonar potion', 'Water Walking potion', 'Lesser Healing potion', 'Healing potion', 'Greater Healing potion', 'Mana potion', 'Super Healing potion', 'Super Mana potion', 'Ammo Reservation potion', 'Archery potion', 'Battle potion', 'Biome Sight potion', 'Builder potion', 'Calming potion', 'Danger Sense potion', 'Endurance potion', 'Lesser Mana potion', 'Greater Mana potion', 'Featherfall potion', 'Gravitational potion', 'Heartreach potion', 'Hunter potion', 'Inferno potion', 'Invisibility potion']
 
 def help():
     print('\nhelp - opens this menu\nlist - will list all available potion recipies\ncraft - gives helpful instructions on crafting potions\nallheal - lists healing items and their stats\nallmana - lists mana items and their stats\nquit - closes this program\n')
@@ -44,9 +44,14 @@ battlepot = (plants[2], 'Vertebra OR Rotten Chunk')
 biomesight = (plants[3], plants[4], plants[0], plants[5])
 builderpot = (plants[0], plants[4], plants[6])
 calmingpot = (fish[4], plants[1])
-cratepot = (misc[1], plants[0], plants[6], plants[7])
 dangersensepot = (plants[6], misc[13])
 endurancepot = (fish[5], plants[4])
+featherfallpot = (plants[1], plants[4], misc[14])
+gravitypot = (plants[3], plants[2], plants[4], misc[14]) # Gravity turned off with Python :)
+heartreachpot = (fish[6], plants[1])
+hunterpot = (plants[1], plants[4], fish[2])
+infernopot = (fish[7], fish[8], plants[3])
+invisibilitypot = (plants[4], plants[0])
 
 while True:
     inqpot = input('What potion would you like to know how to make? ').lower() # Inquire potion
@@ -97,12 +102,22 @@ while True:
         print(', '.join(builderpot))
     elif inqpot == ('calm') or inqpot == ('calming'):
         print(', '.join(calmingpot))
-    elif inqpot == ('crate'):
-        print(', '.join(cratepot))
     elif inqpot == ('dangersense') or inqpot == ('danger sense'):
         print(', '.join(dangersensepot))
     elif inqpot == ('endurance'):
         print(', '.join(endurancepot))
+    elif inqpot == ('featherfall') or inqpot == ('feather fall'):
+        print(', '.join(featherfallpot))
+    elif inqpot == ('gravity') or inqpot == ('gravitational'):
+        print(', '.join(gravitypot))
+    elif inqpot == ('heartreach') or inqpot == ('heart reach'):
+        print(', '.join(heartreachpot))
+    elif inqpot == ('hunter'):
+        print(', '.join(hunterpot))
+    elif inqpot == ('inferno'):
+        print(', '.join(infernopot))
+    elif inqpot == ('invisible') or inqpot == ('invisibility'):
+        print(', '.join(invisibilitypot))
     elif inqpot == ('allheal') or inqpot == ('all heal'):
         print(allheal)
     elif inqpot == ('allmana') or inqpot == ('all mana'):
@@ -117,3 +132,6 @@ while True:
         break
     else:
         print('Invalid input')
+
+# Wishlist - Add quantities of items needed for potions & number of potions created from recipe
+# Add more info. once all potions are added and verified as correct - useful feature ideas go here
