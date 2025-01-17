@@ -4,7 +4,7 @@ plants = ['Moonglow', 'Daybloom', 'Deathweed', 'Fireblossom', 'Blinkroot', 'Gras
 misc = ['Crispy Honey Block', 'Amber', 'Ladybug', 'Pink Pearl', 'White Pearl', 'Black Pearl', 'Obsidian', 'Gel', 'Pixie Dust', 'Crystal Shard', 'Fallen Star', 'Unicorn Horn', 'Lens', 'Cobweb', 'Feather']
 fragments = ['Nebula Fragment', 'Solar Fragment', 'Stardust Fragment', 'Vortex Fragment']
 # Ingredients & Potions lists are incomplete
-allpots = ['Crate potion', 'Fishing potion', 'Flipper potion', 'Gills potion', 'Greater Luck potion', 'Lesser Luck potion', 'Life Force potion', 'Luck potion', 'Obsidian Skin potion', 'Sonar potion', 'Water Walking potion', 'Lesser Healing potion', 'Healing potion', 'Greater Healing potion', 'Mana potion', 'Super Healing potion', 'Super Mana potion', 'Ammo Reservation potion', 'Archery potion', 'Battle potion', 'Biome Sight potion', 'Builder potion', 'Calming potion', 'Danger Sense potion', 'Endurance potion', 'Lesser Mana potion', 'Greater Mana potion', 'Featherfall potion', 'Gravitational potion', 'Heartreach potion', 'Hunter potion', 'Inferno potion', 'Invisibility potion']
+allpots = ['Crate potion', 'Fishing potion', 'Flipper potion', 'Gills potion', 'Greater Luck potion', 'Lesser Luck potion', 'Life Force potion', 'Luck potion', 'Obsidian Skin potion', 'Sonar potion', 'Water Walking potion', 'Lesser Healing potion', 'Healing potion', 'Greater Healing potion', 'Mana potion', 'Super Healing potion', 'Super Mana potion', 'Ammo Reservation potion', 'Archery potion', 'Battle potion', 'Biome Sight potion', 'Builder potion', 'Calming potion', 'Danger Sense potion', 'Endurance potion', 'Lesser Mana potion', 'Greater Mana potion', 'Featherfall potion', 'Gravitational potion', 'Heartreach potion', 'Hunter potion', 'Inferno potion', 'Invisibility potion', 'Regeneration potion', 'Swiftness potion', 'Night Owl potion']
 
 def help():
     print('\nhelp - opens this menu\nlist - will list all available potion recipies\ncraft - gives helpful instructions on crafting potions\nallheal - lists healing items and their stats\nallmana - lists mana items and their stats\nquit - closes this program\n')
@@ -52,6 +52,9 @@ heartreachpot = (fish[6], plants[1])
 hunterpot = (plants[1], plants[4], fish[2])
 infernopot = (fish[7], fish[8], plants[3])
 invisibilitypot = (plants[4], plants[0])
+regenpot = (plants[1], plants[8])
+swiftpot = (plants[4], plants[-2])
+nightowlpot = (plants[1], plants[4])
 
 while True:
     inqpot = input('What potion would you like to know how to make? ').lower() # Inquire potion
@@ -118,6 +121,12 @@ while True:
         print(', '.join(infernopot))
     elif inqpot == ('invisible') or inqpot == ('invisibility'):
         print(', '.join(invisibilitypot))
+    elif inqpot == ('regen') or inqpot == ('regeneration'):
+        print(', '.join(regenpot))
+    elif inqpot == ('swift') or inqpot == ('swiftness'):
+        print(', '.join(swiftpot))
+    elif inqpot == ('night owl') or inqpot == ('nightowl'):
+        print(', '.join(nightowlpot))
     elif inqpot == ('allheal') or inqpot == ('all heal'):
         print(allheal)
     elif inqpot == ('allmana') or inqpot == ('all mana'):
