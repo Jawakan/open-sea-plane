@@ -4,7 +4,7 @@ plants = ['Moonglow', 'Daybloom', 'Deathweed', 'Fireblossom', 'Blinkroot', 'Gras
 misc = ['Crispy Honey Block', 'Amber', 'Ladybug', 'Pink Pearl', 'White Pearl', 'Black Pearl', 'Obsidian', 'Gel', 'Pixie Dust', 'Crystal Shard', 'Fallen Star', 'Unicorn Horn', 'Lens', 'Cobweb', 'Feather']
 fragments = ['Nebula Fragment', 'Solar Fragment', 'Stardust Fragment', 'Vortex Fragment']
 # Ingredients & Potions lists are incomplete
-allpots = ['Crate potion', 'Fishing potion', 'Flipper potion', 'Gills potion', 'Greater Luck potion', 'Lesser Luck potion', 'Life Force potion', 'Luck potion', 'Obsidian Skin potion', 'Sonar potion', 'Water Walking potion', 'Lesser Healing potion', 'Healing potion', 'Greater Healing potion', 'Mana potion', 'Super Healing potion', 'Super Mana potion', 'Ammo Reservation potion', 'Archery potion', 'Battle potion', 'Biome Sight potion', 'Builder potion', 'Calming potion', 'Danger Sense potion', 'Endurance potion', 'Lesser Mana potion', 'Greater Mana potion', 'Featherfall potion', 'Gravitational potion', 'Heartreach potion', 'Hunter potion', 'Inferno potion', 'Invisibility potion', 'Regeneration potion', 'Swiftness potion', 'Night Owl potion']
+allpots = ['Crate potion', 'Fishing potion', 'Flipper potion', 'Gills potion', 'Greater Luck potion', 'Lesser Luck potion', 'Life Force potion', 'Luck potion', 'Obsidian Skin potion', 'Sonar potion', 'Water Walking potion', 'Lesser Healing potion', 'Healing potion', 'Greater Healing potion', 'Mana potion', 'Super Healing potion', 'Super Mana potion', 'Ammo Reservation potion', 'Archery potion', 'Battle potion', 'Biome Sight potion', 'Builder potion', 'Calming potion', 'Danger Sense potion', 'Endurance potion', 'Featherfall potion', 'Gravitational potion', 'Heartreach potion', 'Hunter potion', 'Inferno potion', 'Invisibility potion', 'Regeneration potion', 'Swiftness potion', 'Night Owl potion']
 
 def help():
     print('\nhelp - opens this menu\nlist - will list all available potion recipies\ncraft - gives helpful instructions on crafting potions\nallheal - lists healing items and their stats\nallmana - lists mana items and their stats\nquit - closes this program\n')
@@ -40,7 +40,7 @@ superhealpot = (allpots[14], fragments[0], fragments[1], fragments[2], fragments
 supermanapot = (allpots[15], misc[9], misc[10], misc[11])
 ammorespot = (fish[3], plants[0])
 archerypot = (plants[1], misc[12])
-battlepot = (plants[2], 'Vertebra OR Rotten Chunk')
+battlepot = (plants[2], 'Vertebra/Rotten Chunk')
 biomesight = (plants[3], plants[4], plants[0], plants[5])
 builderpot = (plants[0], plants[4], plants[6])
 calmingpot = (fish[4], plants[1])
@@ -60,73 +60,73 @@ while True:
     inqpot = input('What potion would you like to know how to make? ').lower() # Inquire potion
 
     if inqpot == 'crate':
-        print(', '.join(cratepot))
+        print('\n', ', '.join(cratepot), '\n')
     elif inqpot == 'fishing':
-        print(', '.join(fishpot))
+        print('\n', ', '.join(fishpot), '\n')
     elif inqpot == 'flipper':
-        print(', '.join(flipperpot))
+        print('\n', ', '.join(flipperpot), '\n')
     elif inqpot == 'gills':
-        print(', '.join(gillspot))
+        print('\n', ', '.join(gillspot), '\n')
     elif inqpot == ('greaterluck') or inqpot == ('greater luck'):
-        print(', '.join(greaterluckpot))
+        print('\n', ', '.join(greaterluckpot), '\n')
     elif inqpot == ('lesserluck') or inqpot == ('lesser luck'):
-        print(', '.join(lesserluckpot))
+        print('\n', ', '.join(lesserluckpot), '\n')
     elif inqpot == ('lifeforce') or inqpot == ('life force'):
-        print(', '.join(lifeforcepot))
+        print('\n', ', '.join(lifeforcepot), '\n')
     elif inqpot == 'luck':
-        print(', '.join(luckpot))
+        print('\n', ', '.join(luckpot), '\n')
     elif inqpot == ('obsidianskin') or inqpot == ('obsidian skin'):
-        print(', '.join(obsidianskinpot))
+        print('\n', ', '.join(obsidianskinpot), '\n')
     elif inqpot == 'sonar':
-        print(', '.join(sonarpot))
+        print('\n', ', '.join(sonarpot), '\n')
     elif inqpot == ('waterwalking') or inqpot == ('water walking'):
-        print(', '.join(waterwalkpot))
+        print('\n', ', '.join(waterwalkpot), '\n')
     elif inqpot == ('lesserhealing') or inqpot == ('lesser healing'):
-        print(', '.join(lesshealpot))
+        print('\n', ', '.join(lesshealpot), '\n')
     elif inqpot == ('heal') or inqpot == ('healing'):
-        print(', '.join(healpot))
+        print('\n', ', '.join(healpot), '\n')
     elif inqpot == ('greaterhealing') or inqpot == ('greater healing'):
-        print(', '.join(greathealpot))
+        print('\n', ', '.join(greathealpot), '\n')
     elif inqpot == ('mana'):
-        print(', '.join(manapot))
+        print('\n', ', '.join(manapot), '\n')
     elif inqpot == ('superhealing') or inqpot == ('super healing'):
-        print(', '.join(superhealpot))
+        print('\n', ', '.join(superhealpot), '\n')
     elif inqpot == ('supermana') or inqpot == ('super mana'): 
-        print(', '.join(supermanapot))
+        print('\n', ', '.join(supermanapot), '\n')
     elif inqpot == ('ammoreservation') or inqpot == ('ammo reservation'):
-        print(', '.join(ammorespot))
+        print('\n', ', '.join(ammorespot), '\n')
     elif inqpot == ('archery'):
-        print(', '.join(archerypot))
+        print('\n', ', '.join(archerypot), '\n')
     elif inqpot == ('battle'):
-        print(', '.join(battlepot))
+        print('\n', ', '.join(battlepot), '\n')
     elif inqpot == ('biomesight') or inqpot == ('biome sight'):
-        print(', '.join(biomesight))
+        print('\n', ', '.join(biomesight), '\n')
     elif inqpot == ('build') or inqpot == ('builder'):
-        print(', '.join(builderpot))
+        print('\n', ', '.join(builderpot), '\n')
     elif inqpot == ('calm') or inqpot == ('calming'):
-        print(', '.join(calmingpot))
+        print('\n', ', '.join(calmingpot), '\n')
     elif inqpot == ('dangersense') or inqpot == ('danger sense'):
-        print(', '.join(dangersensepot))
+        print('\n', ', '.join(dangersensepot), '\n')
     elif inqpot == ('endurance'):
-        print(', '.join(endurancepot))
+        print('\n', ', '.join(endurancepot), '\n')
     elif inqpot == ('featherfall') or inqpot == ('feather fall'):
-        print(', '.join(featherfallpot))
+        print('\n', ', '.join(featherfallpot), '\n')
     elif inqpot == ('gravity') or inqpot == ('gravitational'):
-        print(', '.join(gravitypot))
+        print('\n', ', '.join(gravitypot), '\n')
     elif inqpot == ('heartreach') or inqpot == ('heart reach'):
-        print(', '.join(heartreachpot))
+        print('\n', ', '.join(heartreachpot), '\n')
     elif inqpot == ('hunter'):
-        print(', '.join(hunterpot))
+        print('\n', ', '.join(hunterpot), '\n')
     elif inqpot == ('inferno'):
-        print(', '.join(infernopot))
+        print('\n', ', '.join(infernopot), '\n')
     elif inqpot == ('invisible') or inqpot == ('invisibility'):
-        print(', '.join(invisibilitypot))
+        print('\n', ', '.join(invisibilitypot), '\n')
     elif inqpot == ('regen') or inqpot == ('regeneration'):
-        print(', '.join(regenpot))
+        print('\n', ', '.join(regenpot), '\n')
     elif inqpot == ('swift') or inqpot == ('swiftness'):
-        print(', '.join(swiftpot))
+        print('\n', ', '.join(swiftpot), '\n')
     elif inqpot == ('night owl') or inqpot == ('nightowl'):
-        print(', '.join(nightowlpot))
+        print('\n', ', '.join(nightowlpot), '\n')
     elif inqpot == ('allheal') or inqpot == ('all heal'):
         print(allheal)
     elif inqpot == ('allmana') or inqpot == ('all mana'):
@@ -144,3 +144,6 @@ while True:
 
 # Wishlist - Add quantities of items needed for potions & number of potions created from recipe
 # Add more info. once all potions are added and verified as correct - useful feature ideas go here
+# Add general descriptions of potions with maybe "crate potion des" OR effects of all potions starting with the letter "I" 
+# Ex: command | "potion des" - please select a letter; command | "i" - inferno, invisibility, etc. along with a description of each (Horizontal layout of each line)
+# Add If "Invalid input" is output 3 times (every 3 times) then Output message 'Type: "help" for a list of commands'
